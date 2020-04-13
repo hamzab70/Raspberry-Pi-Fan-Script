@@ -24,7 +24,9 @@ Once we have located them we can start soldering:
 3. Connect the Base with the GPIO18(PIN12), it's important to use this pin because it's the only one compatible with PWM
 4. Finally, we join the Emitter with any Ground Pin of the GPIO (In my case PIN20)
 
-![Representation of the electrical scheme]()
+![Representation of the electrical scheme](https://raw.githubusercontent.com/hamzab70/Raspberry-Pi-Fan-Script/master/Electrical-Scheme.png)
+
+​																							*Electrical Scheme description*
 
 
 
