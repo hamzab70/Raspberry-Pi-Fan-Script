@@ -1,10 +1,10 @@
-# Raspberry Pi Fan Script
+# **Raspberry Pi Fan Script**
 
 Simple Bash script to control the fan speed using the Rapsberry Pi GPIO and a transistor.
 
 
 
-### Requirements
+## Requirements
 
 - Raspberry Pi
 - PC Fan (if possible, that it doesn't exceed 0.20A)
@@ -13,7 +13,7 @@ Simple Bash script to control the fan speed using the Rapsberry Pi GPIO and a tr
 
 
 
-### Electrical Circuit
+## Electrical Circuit
 
 The circuit is pretty simple. First you have to be careful identifying the three legs of the transistor, the middle one is the longest (Base) and from it, we can identify the other two (Emitter and Collector).
 
@@ -28,7 +28,7 @@ Once we have located them we can start soldering:
 
 
 
-### Using the Script
+## Using the Script
 
 First of all we'll need to access our system via SSH or open a terminal to install the GPIO access library for the Raspberry Pi:
 
@@ -52,7 +52,7 @@ Paste the script and save it with CTRL+X. When we exit the editor, we'll give th
 sudo chmod +x fan.sh
 ```
 
-Now the script is ready to be used. But we'll need run it manually every time the computer is started, to solve this we'll use a Linux daemon called [Cron](https://en.wikipedia.org/wiki/Cron):
+Now the script is ready to be used. But we'll need run it manually every time the computer is started. To solve this we'll use a Linux daemon called [Cron](https://en.wikipedia.org/wiki/Cron):
 
 ```
 crontab -e
@@ -66,7 +66,7 @@ Paste the next line at the end of the file where there is no #:
 
 Save it with CTRL+X and exit. 
 
-Finally we scheduled our script . Now we need to restart to have it running in the background.
+Now the script is scheduled. To execute it we need to restart and it'll start running in the background.
 
 ```
 sudo reboot
