@@ -26,8 +26,6 @@ Once we have located them we can start soldering:
 
 ![Representation of the electrical scheme](https://raw.githubusercontent.com/hamzab70/Raspberry-Pi-Fan-Script/master/Electrical-Scheme.png)
 
-​																							*Electrical Scheme description*
-
 
 
 ### Using the Script
